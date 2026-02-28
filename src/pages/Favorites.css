@@ -514,3 +514,22 @@
         flex-direction: column;
     }
 }
+
+.item-actions {
+    flex-wrap: wrap;
+}
+.wishlist-save-btn {
+    flex: 1;
+    min-width: 140px;
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.wishlist-save-btn:hover {
+    background: #1d4ed8;
+}

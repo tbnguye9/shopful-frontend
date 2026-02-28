@@ -7,7 +7,6 @@ const Profile = ({ basePath = "/" }) => {
         name: "John",
         email: "JOHNDOE@gmail.com",
         password: "********",
-        postalCode: "85323"
     });
     const [isEditing, setIsEditing] = useState(false);
 
@@ -103,21 +102,6 @@ const Profile = ({ basePath = "/" }) => {
                                     />
                                 ) : (
                                     <div className="form-value">{user.password}</div>
-                                )}
-                            </div>
-
-                            <div className="form-group">
-                                <label htmlFor="postalCode" className="form-label">Postal Code</label>
-                                {isEditing ? (
-                                    <input
-                                        id="postalCode"
-                                        type="text"
-                                        value={user.postalCode}
-                                        onChange={(e) => handleInputChange('postalCode', e.target.value)}
-                                        className="form-input"
-                                    />
-                                ) : (
-                                    <div className="form-value">{user.postalCode}</div>
                                 )}
                             </div>
 
